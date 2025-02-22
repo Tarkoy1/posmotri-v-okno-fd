@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -30,6 +33,11 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+}
+
+.content {
+  display: grid;
+  
 }
 
 ul,
