@@ -28,7 +28,7 @@
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: result content__details;
+  grid-template-areas: "result" "content__details";
   gap: 30px;
   align-items: end;
   max-width: 1140px;
@@ -55,6 +55,7 @@
   cursor: pointer;
 }
 
+/* Секция details */
 .content__detais {
   display: flex;
   flex-direction: column;
@@ -75,13 +76,83 @@
   gap: 30px;
 }
 
+.content__list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px 30px;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 3px;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 40px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 196px;
+  font-family: "Oswald", sans-serif;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.content__video-card-description { 
+  font-weight: 400;
+  font-size: 18px;
+  line-clamp: 3;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.search-form__fildset-title {
+  line-height: 21.6px;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .title {
   font-family: inherit;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 0.94;
+  text-transform: uppercase;
 }
+
+.content__accent {
+  color: #545050;
+}
+
