@@ -35,16 +35,17 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
+} 
 
 .button {
-  border: #fff 1px solid;
+  font-family: "Fira Sans Condensed", sans-serif;
+  border: 1px solid #fff;
   color: #fff;
   background: transparent;
+  line-height: 21.6px;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Fira Sans Condensed", sans-serif;
   padding: 6px 0;
   cursor: pointer;
-  
-}
+} 
